@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "NNN",
+    "NPN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "dangtools:party_sickle_hammer"
+    }
+  },
+  "result": {
+    "id": "dangtools:party_power",
+    "count": 1
+  }
+}

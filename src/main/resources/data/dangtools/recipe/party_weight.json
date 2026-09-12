@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "NNN",
+    "NPN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:iron_block"
+    },
+    "P": {
+      "item": "dangtools:party_sickle_hammer"
+    }
+  },
+  "result": {
+    "id": "dangtools:party_weight",
+    "count": 1
+  }
+}
