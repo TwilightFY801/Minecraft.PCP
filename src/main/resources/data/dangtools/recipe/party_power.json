@@ -2,16 +2,37 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "pattern": [
-    "NNN",
-    "NPN",
-    "NNN"
+    "HND",
+    "BEP",
+    "WTX"
   ],
   "key": {
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
     "N": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "minecraft:dragon_egg"
+    },
+    "B": {
+      "item": "minecraft:diamond_block"
+    },
+    "E": {
+      "item": "simulated:white_portable_engine"
     },
     "P": {
+      "item": "minecraft:netherite_block"
+    },
+    "W": {
+      "item": "dangtools:party_weight"
+    },
+    "T": {
       "item": "dangtools:party_sickle_hammer"
+    },
+    "X": {
+      "item": "minecraft:obsidian"
     }
   },
   "result": {

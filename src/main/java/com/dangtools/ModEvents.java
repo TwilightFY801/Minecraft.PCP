@@ -58,6 +58,19 @@ public class ModEvents {
 
         BlockState state = event.getState();
         BlockPos pos = event.getPos();
+
+        // 党的动力：本身只掉 1 个；用「来自中国伟大的党」挖掘时有 40% 概率额外再掉 1 个
+        if (party && state.is(Registration.PARTY_POWER.get())) {
+            if (level instanceof ServerLevel serverLevel && serverLevel.random.nextFloat() < 0.40F) {
+                Vec3 at = pos.getCenter();
+                ItemEntity extra = new ItemEntity(serverLevel, at.x, at.y + 0.2, at.z,
+                        new ItemStack(Registration.PARTY_POWER_ITEM.get()));
+                extra.setDeltaMovement(0.0, 0.2, 0.0);
+                serverLevel.addFreshEntity(extra);
+            }
+            return;
+        }
+
         int multiplier = party ? 3 : 2;             // 镰刀 x2，组合工具 x3
         int extraCopies = multiplier - 1;           // 额外生成的副本数量
 
